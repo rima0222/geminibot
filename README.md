@@ -1,22 +1,12 @@
-# AI Self-Learning Real Live Trading Bot
+# ربات ترید هوشمند و خودآموز (AI Real Live Trading Bot)
 
-ربات خودآموز ترید هوشمند با قابلیت دریافت داده لایو از API بایننس، تحلیل هم‌بستگی شاخص‌ها، ذخیره دیتابیس SQLite، پنل وب امن و اطلاع‌رسانی تلگرام.
+این یک ربات ترید هوشمند و خودآموز به زبان پایتون است که داده‌های لایو بازار (BTC، TOTAL2 و USDT.D) را دریافت کرده، هم‌بستگی شاخص‌ها را تحلیل می‌کند، پوزیشن‌های لایو مجازی (Paper Trading) باز کرده و تمام اطلاعات را در دیتابیس SQLite و پنل وب نمایش می‌دهد.
 
-## نصب و اجرا روی Ubuntu VPS
+---
+
+## 🚀 دستور نصب تک‌خطی (Ubuntu VPS)
+
+برای نصب و اجرای سریع تمام پیش‌نیازها و پروژه روی سرور اوبونتو، این دستور را اجرا کنید:
 
 ```bash
-# ۱. به‌روزرسانی و نصب Git و Python
-sudo apt update && sudo apt upgrade -y
-sudo apt install python3 python3-pip git screen -y
-
-# ۲. کلون پروژه و نصب پکیج‌ها
-git clone [https://github.com/USERNAME/auto-trading-bot.git](https://github.com/USERNAME/auto-trading-bot.git)
-cd auto-trading-bot
-pip3 install -r requirements.txt
-
-# ۳. باز کردن پورت پنل وب
-sudo ufw allow 8000/tcp
-
-# ۴. اجرای ربات در محیط دائمی (Screen)
-screen -S trading_bot
-python3 trading_robot.py
+git clone [https://github.com/rima0222/geminibot.git](https://github.com/rima0222/geminibot.git) && cd geminibot && pip3 install -r requirements.txt && python3 trading_robot.py
